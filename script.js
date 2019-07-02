@@ -10,30 +10,34 @@ var mioarray = ["luca.luca@gmail.com", "paolo.paolo@hotmail.com", "nicola@gmail.
 
 
 // Controllo nell'Array se la mail inserita dall'utente è presente
-for (i = 0; i < mioarray.length; i++){
-
-  if (mioarray[i] == mail){
-    alert('Benvenuto');
-    console.log(mail);
-  }
-
-
-
-}
-
-
 // for (i = 0; i < mioarray.length; i++){
-//   if (mioarray[i] === mail){
-//     // alert('accesso negato per questo utente');
+//  var controllo = false;
+//
+//   if (mioarray.includes(mail)){
 //     alert('welcome');
-//     console.log('wellcome');
-//   }
-//
-//   else{
-//     alert('accesso negato');
-//     console.log('accesso negato');
-//
+//     console.log(mail);
+//     controllo = true;
 //     break;
+//   }
+//   else  (!(mioarray.includes(mail))){
+//   console.log('accesso negato');
+//   controllo = false;
+//   break;
 //   }
 //
 // }
+
+
+for (i = 0; i < mioarray.length; i++){
+  if (mioarray[i] == mail){
+    // alert('accesso negato per questo utente');
+    alert('welcome');
+    console.log('loggato');
+  }
+    // alert('non loggato');
+    // console.log('non loggato');
+    // break;
+  
+
+
+}
