@@ -1,7 +1,7 @@
 // Chiedi la mail all'utente
 var mail;
 
-mail = prompt('inserisci la tua mail')
+mail = prompt('inserisci la tua mail');
 
 
 // Check mail list
@@ -11,12 +11,29 @@ var mioarray = ["luca.luca@gmail.com", "paolo.paolo@hotmail.com", "nicola@gmail.
 
 // Controllo nell'Array se la mail inserita dall'utente è presente
 for (i = 0; i < mioarray.length; i++){
-  if (mail===mioarray[i]){
+
+  if (mioarray[i] == mail){
     alert('Benvenuto');
-    console.log(mioarray[i]);
+    console.log(mail);
   }
-  else{
-    alert('accesso negato per questo utente');
-    console.log(mioarray[i]);
-  }
+
+
+
 }
+
+
+// for (i = 0; i < mioarray.length; i++){
+//   if (mioarray[i] === mail){
+//     // alert('accesso negato per questo utente');
+//     alert('welcome');
+//     console.log('wellcome');
+//   }
+//
+//   else{
+//     alert('accesso negato');
+//     console.log('accesso negato');
+//
+//     break;
+//   }
+//
+// }
