@@ -1,6 +1,6 @@
 // creo la funzine per il lancio dei dadi
 function lancioDadoUtente() {
-   var dadonum, dadocpu, esito;
+   var dadoutente, dadocpu, esito;
 
    // Genero un numero random da 1 a 6 per l'utente
    dadoutente = Math.floor((Math.random() * 6)+ 1);

@@ -7,6 +7,10 @@ mail = prompt('inserisci la tua mail');
 // Check mail list
 var mioarray = ["luca.luca@gmail.com", "paolo.paolo@hotmail.com", "nicola@gmail.it", "francesco@aruba.it" , "andrea.andrea@tiscali.it", "mario.luca@yahoo.com", "gildo@gmail.com"];
 
+// Variabile booleana
+var trovato = false;
+
+
 
 
 // Controllo nell'Array se la mail inserita dall'utente è presente
@@ -28,16 +32,21 @@ var mioarray = ["luca.luca@gmail.com", "paolo.paolo@hotmail.com", "nicola@gmail.
 // }
 
 
-for (i = 0; i < mioarray.length; i++){
-  if (mioarray[i] == mail){
-    // alert('accesso negato per questo utente');
-    alert('welcome');
-    console.log('loggato');
+
+for (var i = 0; i < mioarray.length; i++){
+
+  if (mail == mioarray[i]){
+    trovato = true;
   }
-    // alert('non loggato');
-    // console.log('non loggato');
-    // break;
-  
 
+}
 
+//Controllo della variabile Boolena, se true : trovato, se false: non trovato
+if (trovato) {
+  alert('welcome');
+  console.log('loggato');
+}
+else{
+  alert('Non sei loggato');
+  console.log('non sei loggato');
 }
